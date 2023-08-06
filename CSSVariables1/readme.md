@@ -129,7 +129,9 @@ See the [following page](https://caniuse.com/css-variables).
 
 This article has provided the basics for CSS custom properties (variables) with a Razor Page project which allow developers to define values in a single place and reuse them throughout the stylesheet, reducing the need for repetitive code and making it easier to make global changes.
 
+There are many great resources out there to expand your knowledge once past the basics.
+
 ## Source code
 
-Clone the following GitHub repository
+Clone the following [GitHub repository](https://github.com/karenpayneoregon/web-samples)
 
