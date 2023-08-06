@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Styling", "Styling", "{B5DEE4D8-E9E3-4AA9-98A8-DFBA255A7DE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSSVariables1", "CSSVariables1\CSSVariables1.csproj", "{7D2E563E-0C72-466C-A5B5-A4703968FC6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEDC2ABB-2A57-41FC-9024-3A533AB969BE}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Accessibility", "Accessibility", "{21D407EE-E2B6-49D3-A057-6876DD49C56B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkipLinkApplication", "SkipLinkApplication\SkipLinkApplication.csproj", "{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2E563E-0C72-466C-A5B5-A4703968FC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2E563E-0C72-466C-A5B5-A4703968FC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2E563E-0C72-466C-A5B5-A4703968FC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2E563E-0C72-466C-A5B5-A4703968FC6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7D2E563E-0C72-466C-A5B5-A4703968FC6B} = {B5DEE4D8-E9E3-4AA9-98A8-DFBA255A7DE3}
+		{5E70A58D-4FA0-4A0F-B130-9C723EF3EC13} = {21D407EE-E2B6-49D3-A057-6876DD49C56B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01272859-0FDA-4FD9-98D3-3579F7410403}
+	EndGlobalSection
+EndGlobal

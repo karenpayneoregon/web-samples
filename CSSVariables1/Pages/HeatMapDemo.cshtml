@@ -1,0 +1,77 @@
+﻿@page
+@model CSSVariables1.Pages.HeatMapDemoModel
+@{
+}
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@jsuites/heatmap/heatmap.min.css" type="text/css" />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@@jsuites/heatmap/heatmap.min.js"></script>
+
+<style>
+    body {
+        background-color: rgb(72,72,72);
+        color: aqua
+    }
+
+    #heatmap {
+        border: aqua;
+    }
+
+    footer {
+        display: none;
+    }
+
+    #heatmapWrap {
+        border-radius: 1em;
+        background-color: rgb(56, 56, 56);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+</style>
+
+@*
+    Tinkering with heatmap from jsuites
+    Note the @@ to escape @ in link and script references
+*@
+
+<div class="alert alert-dark" role="alert">
+    Has nothing to do with CSS properties, found it and was curious - not fully responsive.
+</div>
+
+<div id="heatmapWrap" class="p-5 shadow w-50">
+    <div id='heatmap'></div>
+</div>
+
+
+<script>
+    var initialDate = '2023-01-01';
+
+    var year = [];
+    var date = new Date(initialDate);
+
+    while (year.length < 366) {
+
+        year.push({
+            date: date.toISOString().slice(0, 10),
+            value: Math.random() * generateRandomInteger(10, 20)
+        });
+
+        date.setDate(date.getDate() + 1);
+    }
+
+    jSuites.heatmap(document.getElementById('heatmap'), {
+        title: 'Example',
+        data: year,
+        date: initialDate,
+        colors: ['#B2DFDB', '#4DB6AC', '#009688', '#00796B', '#004D40'],
+        //colors: ['#FFCCBC', '#FF8A65', '#FF5722', '#E64A19', '#BF360C'],
+        tooltip: true
+    });
+
+    function generateRandomInteger(min, max) {
+        return Math.floor(min + Math.random() * (max - min + 1));
+    }
+</script>
